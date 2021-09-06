@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'holaMundo';
+  owner = 'Jonatan Sandoval';
+  visitante:string = '';
+  nombrarVisitante(input: any):void {
+    this.visitante = input.value;
+  }
 }
